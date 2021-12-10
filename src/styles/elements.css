@@ -1,0 +1,20 @@
+.btn {
+  background-color: var(--fg-light);
+  border-radius: 15px;
+  padding: 8px 16px;
+  line-height: 1.2rem;
+  border: 1px solid var(--fg-light);
+  color: var(--fg-dark);
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  border: 1px solid var(--fg-light);
+  background-color: var(--bg-dark);
+  color: var(--fg-light);
+}
+
+.btn--caution {
+  background-color: #ab1212;
+  color: var(--fg-light);
+}

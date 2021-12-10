@@ -1,0 +1,29 @@
+.notification {
+  position: absolute;
+  width: 20%;
+  border-radius: 15px;
+  background-color: var(--green-jacque);
+  color: var(--fg-dark);
+  top: 0;
+  left: 40%;
+  padding: 1rem;
+  transform: translateY(-100%);
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 99;
+}
+
+.notification__text {
+  margin: 0;
+}
+
+.notification--visible {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .notification {
+    width: 90%;
+    left: 5%;
+  }
+}

@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+:root {
+  --bg-dark: #282c34;
+  --fg-light: #ffffff;
+  --fg-dark: #121212;
+  --green-jacque: #75FBCF;
+  --shadow-light: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Sans', 'Helvetica', Arial, sans-serif;
+  background-color: var(--bg-dark);
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "header"
+    "content";
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+}
+
+.main-body {
+  grid-area: content;
+  padding: 15px 40px;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-body {
+    padding: 15px;
+  }
+}
+
+.card-deck__image, 
+.drawn-card__image {
+  overflow: hidden;
+  border-radius: 9px;
+  box-shadow: -1px 1px 3px var(--shadow-light);
+  background-color: var(--fg-light);
+}
+
+.card-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .card-controls .control {
+    width: 100%;
+  }
+
+  .card-controls .control + .control {
+    margin-top: 10px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

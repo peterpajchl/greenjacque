@@ -1,0 +1,12 @@
+.body-header {
+  color: var(--fg-light);
+}
+
+.body-header__title {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.body-header__counter {
+  margin-bottom: 5px;
+}

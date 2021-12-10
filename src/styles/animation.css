@@ -1,0 +1,17 @@
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-down {
+  animation: slide-down 0.75s forwards;
+  -webkit-animation: slide-down 0.75s forwards;
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@keyframes slide-down {
+  100% { transform: translateY(50%); }
+}

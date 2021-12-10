@@ -1,0 +1,32 @@
+.main-body__block--hand {
+  flex: 1;
+}
+
+.cards-in-hand__list {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 290px;
+  overflow: auto;
+  list-style: none;
+}
+
+.drawn-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  width: 170px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-in-hand__list {
+    height: 220px;
+  }
+
+  .drawn-card {
+    width: 120px;
+    height: 168px;
+  }
+}

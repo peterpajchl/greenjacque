@@ -1,0 +1,62 @@
+.main-body__block--deck {
+  margin-right: 20px;
+}
+
+.cards-in-deck__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 290px;
+  min-width: 134px;
+}
+
+.deck-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 170px;
+  height: 238px;
+  border-radius: 9px;
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.1);
+  background-color: var(--fg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-deck {
+  height: 270px;
+  position: relative;
+}
+
+.draw-card {
+  border-radius: 18px;
+  border: 2px solid var(--fg-light);
+  padding: 2px 2px 2px 8px;
+  display: flex;
+}
+
+.draw-card__input {
+  border: 0;
+  background-color: var(--bg-dark);
+  text-align: right;
+  color: var(--fg-light);
+  font-weight: bold;
+  outline: 0;
+}
+
+.draw-card__submit {
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .cards-in-deck__list {
+    height: 220px;
+  }
+
+  .deck-card {
+    width: 120px;
+    height: 168px;
+  }
+}
